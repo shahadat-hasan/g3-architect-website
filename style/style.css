@@ -14,6 +14,10 @@
 .text-primary{
     color:#FF900E;
 }
+.section-title{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
 /* Dark 02 */
 .text-gray{
     color:rgba(66, 66, 66, 1);
@@ -100,10 +104,6 @@ main>section{
     margin-left: 70px;
     max-width: 530px;
     height: 304px;
-}
-.feature-title{
-    font-size: 2.5rem;
-    font-weight: 700;
 }
 #quick-list{
     font-weight: 600;
