@@ -40,7 +40,7 @@
     cursor: pointer;
 }
 main{
-    max-width: 1080px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 main>section{
@@ -69,7 +69,7 @@ main>section{
     
 }
 .navbar,#banner{
-    max-width:1080px;
+    max-width:1280px;
     margin:0 auto;
 }
 /* banner style related  */
@@ -110,6 +110,40 @@ main>section{
 }
 .feature-subtitle{
     line-height: 26px;
+}
+/* feature section styles here  */
+#feature-section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+    
+}
+.features{
+    gap:140px;
+}
+.feature-card{
+    padding:30px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+.feature-card>.feature-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top:0px;
+    margin-bottom: 0px;
+   
+}
+
+#experience-badge{
+    padding:45px 42px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+#experience-year{
+    font-size: 4rem;
+    font-weight: 700;
 }
 /* comes fact related styles here  */
 .facts-container{
@@ -162,12 +196,21 @@ main>section{
 
 /* resposive media query  */
 @media screen and (max-width:576px) {
-    .navbar,.nav-links,.team{
+    .navbar,.nav-links,.team,.features{
         flex-direction: column;
     }
     .team-img-container,.facts-container,.sponsor-companis{
         grid-template-columns: repeat(1,1fr);
     }
+
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .featured-architect-image>img{
+        width:100%;
+    }
+   
     .facts-container{
         justify-items: center;
         gap:24px;
@@ -180,8 +223,15 @@ main>section{
 
 /* medium device media query  */
 @media screen and (min-width:576px) and (max-width:992px){
-    .team{
+    .team,.features{
         flex-direction: column;
+    }
+    .featured-architect-image>img{
+        width:100%;
+    }
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
     }
     .our-features{
         margin: 50px auto;
